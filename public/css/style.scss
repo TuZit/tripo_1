@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Pushster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Pushster&family=Suez+One&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+$primary-color: #da392b;
+$bg-color: rgb(232, 230, 230);
+$btn-color: rgb(252, 255, 114);
+$sub-color: rgb(39, 36, 67);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main {
+  // font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
+  background-color: $bg-color;
+  color: $sub-color;
+}
+
+.App {
+  font-family: "Lato", sans-serif;
+  background-color: $bg-color;
+  color: $sub-color;
+}
+
+// Nav
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+
+  a {
+    padding: 1.2rem 2.4rem;
+    display: inline-block;
+  }
+
+  .nav--left {
+    border-radius: 0 0 1rem 1rem;
+    margin-right: 6rem;
+    background-color: #fff;
+
+    a {
+      font-size: 2rem;
+      transition: background-color 0.2s ease-in;
+      height: 100%;
+      overflow: hidden;
+      color: #000;
+    }
+
+    a:hover {
+      background-color: ($primary-color);
+      color: #fff;
+    }
+  }
+}
+
+.nav--right {
+  a {
+    display: inline-block;
+    border-radius: 0 0 1rem 1rem;
+    font-size: 2.4rem;
+    font-family: "Pushster", cursive;
+    color: #fff;
+    background-color: ($primary-color);
+  }
+}
+
+.introduce {
+  height: 120vh;
+  padding-top: 16rem;
+  background-image: url("../img/hd_bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .introduce__content {
+    padding: 2rem 5rem;
+
+    h1 {
+      font-size: 6rem;
+      font-weight: 900;
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: 2rem;
+      padding: 0.4rem 0 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+
+    img {
+      display: block;
+    }
+  }
+}
+
+.download-app {
+  display: flex;
+  align-items: flex-start;
+  gap: 0 2rem;
+
+  img {
+    height: 45px;
+    width: auto;
+    display: inline-block;
+  }
+}
+
+// Image tag
+
+.image-tags {
+  width: 100%;
+  position: static;
+}
+
+.image-tags__container {
+  display: flex;
+  margin: 0 8rem;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  // transform: translate(-50%, -50%);
+}
+
+.image-tags__items {
+  flex-basis: 22.5%;
+}
+
+.image-tags__items img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+// about
+.about {
+  text-align: center;
+  padding: 40rem 0 0 0;
+  background-color: $bg-color;
+
+  .about__context {
+    width: 55%;
+    margin: 0 auto;
+    h4 {
+      font-size: 2.4rem;
+    }
+
+    h2 {
+      font-size: 5rem;
+      font-weight: 900;
+      padding: 2.4rem 0;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2.4rem;
+    }
+
+    button {
+      padding: 1.4rem 2rem;
+      font-size: 1.8rem;
+      color: #fff;
+      background-color: $primary-color;
+      border: 1px solid transparent;
+      border-radius: 1rem;
+      transition: background-color border 0.4s ease-in-out;
+    }
+
+    button:hover {
+      border: 1px solid #000;
+      color: #000;
+      background-color: $bg-color;
+    }
+  }
+
+  .about__img {
+    width: 45%;
+    margin: 5rem auto;
+    position: relative;
+
+    > img {
+      width: 100%;
+      border-radius: 2rem;
+    }
+  }
+
+  .about__img-popup {
+    position: absolute;
+    left: -10%;
+    top: 55%;
+
+    img {
+      transform: scale(1.15);
+    }
+  }
+}
+
+// Our Game
+.our-game {
+  padding: 10rem 0 0 0;
+
+  .game__header {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    h3 {
+      font-size: 4rem;
+      margin-bottom: 2.4rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      width: 80%;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  // game body
+  .game__body {
+    padding-top: 10rem;
+    position: relative;
+    > img {
+      object-position: center;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .game__items-1,
+    .game__items-2,
+    .game__items-3,
+    .game__items-4 {
+      position: absolute;
+      width: 25%;
+      padding: 3rem;
+      background-color: #fff;
+      border-radius: 2rem;
+      > p {
+        padding: 3.6rem 0;
+        font-size: 1.6rem;
+      }
+    }
+    .game__items-1 {
+      top: 10%;
+      left: 14.5%;
+    }
+
+    .game__items-2 {
+      top: 10%;
+      right: 14%;
+    }
+
+    .game__items-3 {
+      bottom: -2%;
+      left: 14.5%;
+    }
+
+    .game__items-4 {
+      bottom: -5%;
+      right: 16%;
+      background-color: transparent;
+    }
+  }
+}
+
+.game__items-title {
+  display: flex;
+  gap: 2rem;
+
+  img {
+    display: inline-block;
+    border-radius: 1.6rem;
+  }
+
+  .game__items-title__text {
+    h4 {
+      font-size: 1.8rem;
+      font-weight: 760;
+      margin-top: 1rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+// contact
+.contact {
+  padding-top: 16rem;
+
+  .contact__desc {
+    height: 100vh;
+    background: url(../img/ft1_bg.webp) no-repeat center/ cover;
+    position: relative;
+  }
+}
+
+.contact__desc-content {
+  padding-left: 10rem;
+  padding-top: 12rem;
+  width: 65%;
+  h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  h2 {
+    margin: 3rem 0;
+    font-family: "Suez One", serif;
+    font-size: 5rem;
+    color: #fff;
+  }
+}
+
+.contact__desc-imgPopup {
+  position: absolute;
+  bottom: -1%;
+  right: 10%;
+}
+
+.contact__desc-content button,
+.contact__form-subscribe button,
+.contact__form-info__wrap button {
+  padding: 2rem 1.4rem;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+  border: none;
+  background-color: $btn-color;
+}
+
+.contact__desc-content button:hover,
+.contact__form-subscribe button:hover {
+  background-color: $bg-color;
+}
+
+.contact__form {
+  height: 100vh;
+  background: url(../img/ft2_bg.webp) no-repeat center/ cover;
+  position: relative;
+}
+
+.contact__form-subscribe {
+  background-color: $primary-color;
+  position: absolute;
+  right: 10%;
+  bottom: 35%;
+  padding: 3.6rem 2.4rem;
+  border-radius: 2rem;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+  }
+}
+
+.contact__form-subscribe,
+.contact__form-info-getName__items,
+.contact__form-info-getEmail,
+.contact__form-info-getMess {
+  label {
+    display: block;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 2rem 0 1.4rem;
+  }
+
+  input,
+  textarea {
+    font-size: 1.6rem;
+    padding: 2rem;
+    border-radius: 1.6rem;
+    border: 2px solid #000;
+    margin-right: 2rem;
+    outline: none;
+    width: 100%;
+  }
+}
+
+.contact__form-subscribe {
+  input {
+    width: auto;
+  }
+}
+
+// contact__form-info
+
+.contact__form-info {
+  background-color: #fff;
+  width: 30%;
+  border-radius: 2rem;
+  position: absolute;
+  top: -25%;
+  left: 12%;
+}
+
+.contact__form-info__wrap {
+  padding: 3rem 2.4rem;
+  h3 {
+    font-size: 3.6rem;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 1.8rem;
+    width: 80%;
+    margin-top: 2.4rem;
+  }
+
+  h3,
+  p,
+  label {
+    color: rgb(39, 36, 67);
+  }
+}
+
+.contact__form-info-getName {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact__form-info-getEmail,
+.contact__form-info-getName__items,
+.contact__form-info-getMess {
+  label {
+    color: #000;
+  }
+}
+
+.contact__form-info__wrap button {
+  background-color: rgb(39, 36, 67);
+  width: 100%;
+  margin-top: 2.4rem;
+
+  color: #fff;
+}
+.contact__form-info__wrap button:hover {
+  background-color: $primary-color;
+}
+
+// footer
+.footer {
+  // text-align: center;
+  font-size: 1.8rem;
+  a {
+    color: #000;
+  }
+
+  h3 {
+    padding: 2rem 0;
+  }
+
+  h3,
+  .nav--right {
+    text-align: center;
+  }
+
+  .nav--right a {
+    padding: 1.2rem 2rem;
+    color: #fff;
+  }
+
+  > p {
+    text-align: center;
+    padding: 5rem 0;
+  }
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 8rem;
+  padding: 3rem;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+.footer__wrap-items {
+  h4 {
+    margin-bottom: 2.4rem;
+  }
+  p {
+    padding-bottom: 1.6rem;
+  }
+
+  a:hover {
+    color: $primary-color;
+  }
+}
+
+.active {
+  background-color: ($primary-color);
+  color: #fff !important;
+}

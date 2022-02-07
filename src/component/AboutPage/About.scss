@@ -1,0 +1,237 @@
+$primary-color: #da392b;
+$bg-color: rgb(232, 230, 230);
+$btn-color: rgb(252, 255, 114);
+$sub-color: rgb(39, 36, 67);
+
+.description__intro {
+}
+
+.description__intro-head {
+  padding: 15rem 5rem 8rem;
+  h4 {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  h2 {
+    font-size: 4.8rem;
+    font-family: "Suez One", serif;
+    width: 60%;
+    font-weight: normal;
+  }
+}
+
+.description__intro-grid {
+  display: flex;
+  height: 90vh;
+}
+
+.description__intro-grid__img {
+  flex-basis: 40%;
+  height: auto;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.description__intro-grid__content {
+  flex-basis: 60%;
+  background-color: $primary-color;
+  color: #fff;
+  padding: 8rem 21rem;
+  p {
+    font-size: 1.8rem;
+    padding-bottom: 4rem;
+    line-height: 1.6;
+  }
+}
+
+.description__explain {
+  //   height: 120vh;
+  background: url(about_bg1.webp) no-repeat center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
+
+  h3 {
+    font-size: 4.8rem;
+    font-family: "Suez One", serif;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+.description__explain--grid {
+  padding: 8rem 20% 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.description__explain--grid__items,
+.description__explain--grid__sub-content {
+  background-color: #fff;
+  padding: 3.6rem 4rem;
+  border-radius: 2rem;
+  flex-basis: 45%;
+
+  h4 {
+    color: $primary-color;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    color: $sub-color;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+}
+
+.description__explain--grid__sub {
+  //   background: transparent;
+  //   padding: 0 20%;
+  flex-basis: 100%;
+  margin-left: 4rem;
+}
+
+// founder
+.description__founder {
+  //   margin-top: 6rem;
+  padding: 0 7%;
+}
+
+.description__founder-wrap {
+  background-color: $sub-color;
+  padding-bottom: 8rem;
+
+  h3 {
+    font-size: 4rem;
+    font-family: "Suez One", serif;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    padding: 8rem 0;
+  }
+}
+
+.description__founder-wrap__tags {
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.description__founder-wrap__items {
+  flex-basis: 20%;
+  color: #fff;
+  text-align: center;
+
+  img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 1.6rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}
+
+// Studio
+.description__hiring {
+  margin-top: 8rem;
+  background: url(about_bg2.webp) no-repeat center 10%;
+  background-size: cover;
+  background-color: $primary-color;
+  background-blend-mode: screen;
+  height: 110vh;
+}
+
+.description__hiring-container {
+  display: flex;
+}
+
+.description__hiring--left,
+.description__hiring--right {
+  flex-basis: 50%;
+}
+.description__hiring--left {
+  color: #fff;
+  padding: 16rem 14rem 5rem;
+
+  h4 {
+    font-family: "Suez One", serif;
+    font-size: 2rem;
+    padding-bottom: 1.6rem;
+  }
+
+  h3 {
+    font-family: "Suez One", serif;
+    font-size: 4.8rem;
+    font-weight: normal;
+    padding-bottom: 1.6rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+}
+
+.description__hiring--right {
+  position: relative;
+  padding-top: 16rem;
+  // padding-right: 10rem;
+}
+
+.description__hiring--right__wrap {
+  background-color: #fff;
+  width: 55%;
+  padding: 4.4rem;
+  margin-left: 25%;
+  color: $sub-color;
+  border-radius: 2rem;
+
+  h4 {
+    font-size: 2rem;
+    padding-top: 8rem;
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 1.6rem;
+    padding: 2.4rem 0;
+  }
+
+  a {
+    button {
+      font-size: 1.6rem;
+      border: none;
+      background-color: $sub-color;
+      border-radius: 1.2rem;
+      padding: 2.4rem;
+      color: #fff;
+      transform: background-color 0.8s, visibility 0.25s ease;
+    }
+
+    button:hover {
+      cursor: pointer;
+      background-color: $primary-color;
+    }
+  }
+
+  img {
+    display: block;
+    position: absolute;
+    transform: scale(0.8);
+    top: 15%;
+    left: 26%;
+  }
+}

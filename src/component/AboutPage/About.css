@@ -1,0 +1,210 @@
+.description__intro-head {
+  padding: 15rem 5rem 8rem;
+}
+.description__intro-head h4 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+.description__intro-head h2 {
+  font-size: 4.8rem;
+  font-family: "Suez One", serif;
+  width: 60%;
+  font-weight: normal;
+}
+
+.description__intro-grid {
+  display: flex;
+  height: 90vh;
+}
+
+.description__intro-grid__img {
+  flex-basis: 40%;
+  height: auto;
+}
+.description__intro-grid__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.description__intro-grid__content {
+  flex-basis: 60%;
+  background-color: #da392b;
+  color: #fff;
+  padding: 8rem 21rem;
+}
+.description__intro-grid__content p {
+  font-size: 1.8rem;
+  padding-bottom: 4rem;
+  line-height: 1.6;
+}
+
+.description__explain {
+  background: url(./about_bg1.webp) no-repeat center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: overlay;
+  padding-top: 12rem;
+  padding-bottom: 10rem;
+}
+.description__explain h3 {
+  font-size: 4.8rem;
+  font-family: "Suez One", serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.description__explain--grid {
+  padding: 8rem 20% 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.description__explain--grid__items,
+.description__explain--grid__sub-content {
+  background-color: #fff;
+  padding: 3.6rem 4rem;
+  border-radius: 2rem;
+  flex-basis: 45%;
+}
+.description__explain--grid__items h4,
+.description__explain--grid__sub-content h4 {
+  color: #da392b;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+.description__explain--grid__items p,
+.description__explain--grid__sub-content p {
+  color: #272443;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.description__explain--grid__sub {
+  flex-basis: 100%;
+  margin-left: 4rem;
+}
+
+.description__founder {
+  padding: 0 7%;
+}
+
+.description__founder-wrap {
+  background-color: #272443;
+  padding-bottom: 8rem;
+}
+.description__founder-wrap h3 {
+  font-size: 4rem;
+  font-family: "Suez One", serif;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+  padding: 8rem 0;
+}
+
+.description__founder-wrap__tags {
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.description__founder-wrap__items {
+  flex-basis: 20%;
+  color: #fff;
+  text-align: center;
+}
+.description__founder-wrap__items img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.description__founder-wrap__items h4 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 1.6rem;
+}
+.description__founder-wrap__items p {
+  font-size: 1.8rem;
+}
+
+.description__hiring {
+  margin-top: 8rem;
+  background: url(about_bg2.webp) no-repeat center 10%;
+  background-size: cover;
+  background-color: #da392b;
+  background-blend-mode: screen;
+  height: 110vh;
+}
+
+.description__hiring-container {
+  display: flex;
+}
+
+.description__hiring--left,
+.description__hiring--right {
+  flex-basis: 50%;
+}
+
+.description__hiring--left {
+  color: #fff;
+  padding: 16rem 14rem 5rem;
+}
+.description__hiring--left h4 {
+  font-family: "Suez One", serif;
+  font-size: 2rem;
+  padding-bottom: 1.6rem;
+}
+.description__hiring--left h3 {
+  font-family: "Suez One", serif;
+  font-size: 4.8rem;
+  font-weight: normal;
+  padding-bottom: 1.6rem;
+}
+.description__hiring--left p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.description__hiring--right {
+  position: relative;
+  padding-top: 16rem;
+}
+
+.description__hiring--right__wrap {
+  background-color: #fff;
+  width: 55%;
+  padding: 4.4rem;
+  margin-left: 25%;
+  color: #272443;
+  border-radius: 2rem;
+}
+.description__hiring--right__wrap h4 {
+  font-size: 2rem;
+  padding-top: 8rem;
+  font-weight: 800;
+}
+.description__hiring--right__wrap p {
+  font-size: 1.6rem;
+  padding: 2.4rem 0;
+}
+.description__hiring--right__wrap a button {
+  font-size: 1.6rem;
+  border: none;
+  background-color: #272443;
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+  color: #fff;
+  transform: background-color 0.8s, visibility 0.25s ease;
+}
+.description__hiring--right__wrap a button:hover {
+  cursor: pointer;
+  background-color: #da392b;
+}
+.description__hiring--right__wrap img {
+  display: block;
+  position: absolute;
+  transform: scale(0.8);
+  top: 15%;
+  left: 26%;
+}
+
+/*# sourceMappingURL=About.css.map */

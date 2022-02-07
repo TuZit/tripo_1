@@ -1,0 +1,105 @@
+.careers {
+  padding-top: 16rem;
+  color: #272443;
+}
+.careers .careers__intro {
+  padding-bottom: 10rem;
+  padding-left: 5rem;
+}
+.careers .careers__intro h3 {
+  font-size: 4.8rem;
+  font-family: "Suez One", serif;
+  font-weight: normal;
+  padding: 2.4rem 0 3rem;
+}
+.careers .careers__intro h4 {
+  font-size: 2rem;
+}
+.careers .careers__intro p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  width: 40%;
+}
+
+.careers__jobs {
+  margin: 0 5rem;
+  background-color: #da392b;
+}
+.careers__jobs h3 {
+  font-family: "Suez One", serif;
+  font-size: 5rem;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  padding: 7rem 0;
+}
+
+.careers__jobs-container {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  padding: 0 6%;
+}
+
+.careers__jobs-items {
+  flex-basis: 20%;
+}
+.careers__jobs-items h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+.careers__jobs-items p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+.careers__jobs-items p:last-child {
+  padding: 2rem 0 4rem;
+}
+
+.careers__jobs-items_image {
+  height: fit-content;
+  overflow: hidden;
+  border-radius: 2.1rem;
+}
+.careers__jobs-items_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  transform-origin: 50% 50%;
+  transition: transform 0.4s, visibility 0.25s ease-in;
+}
+
+.careers__jobs-items_image:hover img {
+  transform: scale(1.05);
+}
+
+.careers__looking {
+  margin: 0 5rem;
+  background: url(./ft2_bg.webp) no-repeat center/cover;
+  color: #fff;
+  padding: 12% 7% 0;
+  height: 80vh;
+}
+.careers__looking h4 {
+  font-size: 2rem;
+}
+.careers__looking h3 {
+  font-size: 5rem;
+  font-weight: normal;
+  font-family: "Suez One", serif;
+  padding: 1rem 0 2rem;
+}
+.careers__looking button {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding: 2rem 3rem;
+  background-color: #fcff72;
+  border: none;
+  border-radius: 1.6rem;
+}
+.careers__looking button:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Careers.css.map */

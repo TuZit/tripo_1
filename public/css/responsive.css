@@ -1,0 +1,261 @@
+@media screen and (max-width: 680px) {
+  .clear {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .App {
+    overflow: hidden;
+  }
+
+  /* navbar */
+  .nav--left {
+    display: none;
+  }
+
+  .nav--right a {
+    font-size: 2rem;
+    padding: 1.2rem;
+  }
+
+  /* Introduce */
+  .introduce {
+    padding-top: 4rem;
+    height: auto;
+  }
+
+  .introduce .introduce__content h1 {
+    font-size: 3.6rem;
+    width: 60%;
+  }
+
+  .introduce .introduce__content p {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  /* Image tags */
+  .image-tags {
+    margin-left: 3rem;
+    width: auto;
+  }
+
+  .image-tags__items {
+    width: fit-;
+    margin: 0 auto;
+  }
+
+  .image-tags__items img {
+    width: max-content;
+    margin: 0 auto;
+  }
+
+  .image-tags__container {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    position: static;
+  }
+
+  .image-tags__items {
+    padding: 0.6rem 0;
+    width: 90%;
+  }
+
+  /* About */
+  .about {
+    padding: 3rem 0;
+  }
+
+  .about .about__context h4 {
+    font-size: 1.8rem;
+  }
+
+  .about .about__context h2 {
+    font-size: 2.8rem;
+    width: 100%;
+  }
+
+  .about .about__context p {
+    font-size: 1.4rem;
+  }
+  .about .about__img-popup {
+    top: 55%;
+    left: 20%;
+  }
+
+  .about .about__img {
+    width: auto;
+    margin: 2rem 3rem;
+  }
+
+  .about .about__img-popup img {
+    transform: scale(0.8);
+  }
+
+  .about .about__img img {
+    width: 100%;
+  }
+
+  /* Game */
+  .our-game {
+    padding: 8rem 0 0 3rem;
+  }
+
+  .our-game .game__body {
+    padding-top: 3rem;
+    position: static;
+  }
+
+  .our-game .game__header h3 {
+    margin-bottom: 1rem;
+  }
+
+  .our-game .game__body .game__items-1,
+  .our-game .game__body .game__items-2,
+  .our-game .game__body .game__items-3,
+  .our-game .game__body .game__items-4 {
+    position: static;
+    width: 90%;
+    padding: 2rem;
+    margin: 2.4rem auto;
+  }
+
+  .our-game .game__body .game__items-4 img {
+    width: 100%;
+  }
+
+  .game__body .download-app {
+    display: none;
+  }
+
+  .download-app {
+    gap: 0;
+  }
+
+  /* contact */
+  .contact {
+    padding-top: 3rem;
+  }
+
+  .contact__form {
+    height: auto;
+    padding-bottom: 4rem;
+  }
+
+  .contact .contact__desc {
+    height: auto;
+  }
+
+  .contact__desc-content {
+    padding: 3rem 0 3rem 4.4rem;
+  }
+
+  .contact__desc-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .contact__desc-content h2 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin: 2.4rem 0;
+  }
+
+  .contact__desc-imgPopup {
+    position: static;
+  }
+
+  .contact__desc-imgPopup img {
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .contact__form-info,
+  .contact__form-subscribe,
+  .contact__form-info__wrap {
+    position: static;
+  }
+
+  .contact__form-info,
+  .contact__form-subscribe {
+    width: 87%;
+    margin-top: 4rem;
+    margin-left: 3.5rem;
+  }
+
+  .contact__form-info__wrap h3 {
+    font-size: 2.4rem;
+  }
+
+  .contact__form-info__wrap p {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+  }
+
+  .contact__form-info-getName {
+    display: block;
+  }
+
+  .contact__form-subscribe input,
+  .contact__form-subscribe button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  /* footer */
+  .footer {
+    font-size: 1.6rem;
+  }
+
+  .footer h3 {
+    font-size: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    font-weight: 600;
+  }
+
+  .footer__wrap {
+    display: block;
+    margin: 1rem;
+  }
+
+  .footer__wrap-items:nth-child(2) {
+    float: left;
+  }
+
+  .footer__wrap-items:nth-child(2),
+  .footer__wrap-items:nth-child(3) {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .footer__wrap-items:nth-child(4) > div {
+    display: inline-block;
+    min-height: 42px;
+  }
+
+  .footer__wrap-items:nth-child(4) div:last-child {
+    display: inline-block;
+    min-height: 42px;
+  }
+
+  .footer__wrap-items:nth-child(4) a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer__wrap-items:nth-child(4) img {
+    padding: 0 0.3rem;
+    max-width: 112px;
+    min-height: 42px;
+  }
+
+  .footer__wrap-items {
+    padding: 1rem 0;
+  }
+}

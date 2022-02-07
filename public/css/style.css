@@ -1,0 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Pushster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&family=Pushster&family=Suez+One&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main {
+  font-family: "Lato", sans-serif;
+  background-color: #e8e6e6;
+  color: #272443;
+}
+
+.App {
+  font-family: "Lato", sans-serif;
+  background-color: #e8e6e6;
+  color: #272443;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+.nav a {
+  padding: 1.2rem 2.4rem;
+  display: inline-block;
+}
+.nav .nav--left {
+  border-radius: 0 0 1rem 1rem;
+  margin-right: 6rem;
+  background-color: #fff;
+}
+.nav .nav--left a {
+  font-size: 2rem;
+  transition: background-color 0.2s ease-in;
+  height: 100%;
+  overflow: hidden;
+  color: #000;
+}
+.nav .nav--left a:hover {
+  background-color: #da392b;
+  color: #fff;
+}
+
+.nav--right a {
+  display: inline-block;
+  border-radius: 0 0 1rem 1rem;
+  font-size: 2.4rem;
+  font-family: "Pushster", cursive;
+  color: #fff;
+  background-color: #da392b;
+}
+
+.introduce {
+  height: 120vh;
+  padding-top: 16rem;
+  background-image: url("../img/hd_bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.introduce .introduce__content {
+  padding: 2rem 5rem;
+}
+.introduce .introduce__content h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.introduce .introduce__content p {
+  font-size: 2rem;
+  padding: 0.4rem 0 1.6rem;
+  margin-bottom: 2.4rem;
+}
+.introduce .introduce__content img {
+  display: block;
+}
+
+.download-app {
+  display: flex;
+  align-items: flex-start;
+  gap: 0 2rem;
+}
+.download-app img {
+  height: 45px;
+  width: auto;
+  display: inline-block;
+}
+
+.image-tags {
+  width: 100%;
+  position: static;
+}
+
+.image-tags__container {
+  display: flex;
+  margin: 0 8rem;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.image-tags__items {
+  flex-basis: 22.5%;
+}
+
+.image-tags__items img {
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.about {
+  text-align: center;
+  padding: 40rem 0 0 0;
+  background-color: #e8e6e6;
+}
+.about .about__context {
+  width: 55%;
+  margin: 0 auto;
+}
+.about .about__context h4 {
+  font-size: 2.4rem;
+}
+.about .about__context h2 {
+  font-size: 5rem;
+  font-weight: 900;
+  padding: 2.4rem 0;
+}
+.about .about__context p {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+.about .about__context button {
+  padding: 1.4rem 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #da392b;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  transition: background-color border 0.4s ease-in-out;
+}
+.about .about__context button:hover {
+  border: 1px solid #000;
+  color: #000;
+  background-color: #e8e6e6;
+}
+.about .about__img {
+  width: 45%;
+  margin: 5rem auto;
+  position: relative;
+}
+.about .about__img > img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.about .about__img-popup {
+  position: absolute;
+  left: -10%;
+  top: 55%;
+}
+.about .about__img-popup img {
+  transform: scale(1.15);
+}
+
+.our-game {
+  padding: 10rem 0 0 0;
+}
+.our-game .game__header {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.our-game .game__header h3 {
+  font-size: 4rem;
+  margin-bottom: 2.4rem;
+}
+.our-game .game__header p {
+  font-size: 1.8rem;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+.our-game .game__body {
+  padding-top: 10rem;
+  position: relative;
+}
+.our-game .game__body > img {
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+.our-game .game__body .game__items-1,
+.our-game .game__body .game__items-2,
+.our-game .game__body .game__items-3,
+.our-game .game__body .game__items-4 {
+  position: absolute;
+  width: 25%;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+.our-game .game__body .game__items-1 > p,
+.our-game .game__body .game__items-2 > p,
+.our-game .game__body .game__items-3 > p,
+.our-game .game__body .game__items-4 > p {
+  padding: 3.6rem 0;
+  font-size: 1.6rem;
+}
+.our-game .game__body .game__items-1 {
+  top: 10%;
+  left: 14.5%;
+}
+.our-game .game__body .game__items-2 {
+  top: 10%;
+  right: 14%;
+}
+.our-game .game__body .game__items-3 {
+  bottom: -2%;
+  left: 14.5%;
+}
+.our-game .game__body .game__items-4 {
+  bottom: -5%;
+  right: 16%;
+  background-color: transparent;
+}
+
+.game__items-title {
+  display: flex;
+  gap: 2rem;
+}
+.game__items-title img {
+  display: inline-block;
+  border-radius: 1.6rem;
+}
+.game__items-title .game__items-title__text h4 {
+  font-size: 1.8rem;
+  font-weight: 760;
+  margin-top: 1rem;
+}
+.game__items-title .game__items-title__text p {
+  font-size: 1.6rem;
+}
+
+.contact {
+  padding-top: 16rem;
+}
+.contact .contact__desc {
+  height: 100vh;
+  background: url(../img/ft1_bg.webp) no-repeat center/cover;
+  position: relative;
+}
+
+.contact__desc-content {
+  padding-left: 10rem;
+  padding-top: 12rem;
+  width: 65%;
+}
+.contact__desc-content h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+}
+.contact__desc-content h2 {
+  margin: 3rem 0;
+  font-family: "Suez One", serif;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.contact__desc-imgPopup {
+  position: absolute;
+  bottom: -1%;
+  right: 10%;
+}
+
+.contact__desc-content button,
+.contact__form-subscribe button,
+.contact__form-info__wrap button {
+  padding: 2rem 1.4rem;
+  font-size: 1.6rem;
+  border-radius: 1.2rem;
+  border: none;
+  background-color: #fcff72;
+}
+
+.contact__desc-content button:hover,
+.contact__form-subscribe button:hover {
+  background-color: #e8e6e6;
+}
+
+.contact__form {
+  height: 100vh;
+  background: url(../img/ft2_bg.webp) no-repeat center/cover;
+  position: relative;
+}
+
+.contact__form-subscribe {
+  background-color: #da392b;
+  position: absolute;
+  right: 10%;
+  bottom: 35%;
+  padding: 3.6rem 2.4rem;
+  border-radius: 2rem;
+}
+.contact__form-subscribe h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.contact__form-subscribe label,
+.contact__form-info-getName__items label,
+.contact__form-info-getEmail label,
+.contact__form-info-getMess label {
+  display: block;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 2rem 0 1.4rem;
+}
+.contact__form-subscribe input,
+.contact__form-subscribe textarea,
+.contact__form-info-getName__items input,
+.contact__form-info-getName__items textarea,
+.contact__form-info-getEmail input,
+.contact__form-info-getEmail textarea,
+.contact__form-info-getMess input,
+.contact__form-info-getMess textarea {
+  font-size: 1.6rem;
+  padding: 2rem;
+  border-radius: 1.6rem;
+  border: 2px solid #000;
+  margin-right: 2rem;
+  outline: none;
+  width: 100%;
+}
+
+.contact__form-subscribe input {
+  width: auto;
+}
+
+.contact__form-info {
+  background-color: #fff;
+  width: 30%;
+  border-radius: 2rem;
+  position: absolute;
+  top: -25%;
+  left: 12%;
+}
+
+.contact__form-info__wrap {
+  padding: 3rem 2.4rem;
+}
+.contact__form-info__wrap h3 {
+  font-size: 3.6rem;
+  font-weight: 900;
+}
+.contact__form-info__wrap p {
+  font-size: 1.8rem;
+  width: 80%;
+  margin-top: 2.4rem;
+}
+.contact__form-info__wrap h3,
+.contact__form-info__wrap p,
+.contact__form-info__wrap label {
+  color: #272443;
+}
+
+.contact__form-info-getName {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact__form-info-getEmail label,
+.contact__form-info-getName__items label,
+.contact__form-info-getMess label {
+  color: #000;
+}
+
+.contact__form-info__wrap button {
+  background-color: #272443;
+  width: 100%;
+  margin-top: 2.4rem;
+  color: #fff;
+}
+
+.contact__form-info__wrap button:hover {
+  background-color: #da392b;
+}
+
+.footer {
+  font-size: 1.8rem;
+}
+.footer a {
+  color: #000;
+}
+.footer h3 {
+  padding: 2rem 0;
+}
+.footer h3,
+.footer .nav--right {
+  text-align: center;
+}
+.footer .nav--right a {
+  padding: 1.2rem 2rem;
+  color: #fff;
+}
+.footer > p {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 8rem;
+  padding: 3rem;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+.footer__wrap-items h4 {
+  margin-bottom: 2.4rem;
+}
+.footer__wrap-items p {
+  padding-bottom: 1.6rem;
+}
+.footer__wrap-items a:hover {
+  color: #da392b;
+}
+
+.active {
+  background-color: #da392b;
+  color: #fff !important;
+}
+
+/*# sourceMappingURL=style.css.map */
